@@ -4,7 +4,7 @@ import Login from './components/Login';
 export default function App() {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('gt_user') || 'null'));
   return 
-   ( <div className="app-container">
+    <div className="app-container">
       <header>
         <h1>GameTracker</h1>
         <p>Tu biblioteca personal de videojuegos</p>
@@ -16,6 +16,6 @@ export default function App() {
         <BibliotecaJuegos />
       </main>
     </div>
-   )
+   
   ;
 }
